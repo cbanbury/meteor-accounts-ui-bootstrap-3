@@ -1,9 +1,9 @@
 Package.describe({
-	name: 'ian:accounts-ui-bootstrap-3',
+	name: 'npvn:accounts-ui-bootstrap-3',
 	summary: 'Bootstrap-styled accounts-ui with multi-language support.',
 	version: '1.1.12',
-	git: "https://github.com/ianmartorell/meteor-accounts-ui-bootstrap-3"
-})
+	git: "https://github.com/npvn/meteor-accounts-ui-bootstrap-3"
+});
 
 Package.on_use(function (api) {
 	api.use(['session@1.0.0',
@@ -40,4 +40,4 @@ Package.on_use(function (api) {
 		], 'client')
 
 	api.export('accountsUIBootstrap3', 'client')
-})
+});

@@ -31,10 +31,10 @@
 	{{/if}}
 
 	{{#if allowChangingPassword}}
-		<button class="btn btn-default btn-block" id="login-buttons-open-change-password">{{i18n '_loginButtonsLoggedInDropdownActions.password'}}</button>
+		<button class="btn btn-primary btn-flat" id="login-buttons-open-change-password">{{i18n '_loginButtonsLoggedInDropdownActions.password'}}</button>
 	{{/if}}
 
-	<button class="btn btn-block btn-primary" id="login-buttons-logout">{{i18n '_loginButtonsLoggedInDropdownActions.signOut'}}</button>
+	<button class="btn btn-primary btn-flat" id="login-buttons-logout">{{i18n '_loginButtonsLoggedInDropdownActions.signOut'}}</button>
 </template>
 
 <!--            -->
@@ -81,7 +81,7 @@
 		{{#each fields}}
 			{{> _loginButtonsFormField}}
 		{{/each}}
-		<button class="btn btn-primary col-sm-12" id="login-buttons-password" type="button">
+		<button class="btn btn-primary btn-flat col-sm-12" id="login-buttons-password" type="button">
 			{{#if inSignupFlow}}
 				{{i18n '_loginButtonsLoggedOutPasswordService.create'}}
 			{{else}}
@@ -94,7 +94,7 @@
 				<a id="forgot-password-link" class="pull-left" >{{i18n '_loginButtonsLoggedOutPasswordService.forgot'}}</a>
 			{{/if}}
 			{{#if showCreateAccountLink}}
-				<a id="signup-link" class="pull-right" >{{i18n '_loginButtonsLoggedOutPasswordService.createAcc'}}</a>
+				<a id="signup-link" class="btn btn-primary btn-flat" >{{i18n '_loginButtonsLoggedOutPasswordService.createAcc'}}</a>
 			{{/if}}
 			</div>
 		{{/if}}
@@ -110,13 +110,13 @@
 		<div id="forgot-password-email-label-and-input"> {{! XXX we should probably use loginButtonsFormField }}
 			<input id="forgot-password-email" type="email" placeholder="{{i18n '_forgotPasswordForm.email'}}" class="form-control" />
 		</div>
-		<button class="btn btn-primary login-button-form-submit col-sm-12" id="login-buttons-forgot-password">{{i18n '_forgotPasswordForm.reset'}}</button>
+		<button class="btn btn-primary btn-flat login-button-form-submit col-sm-12" id="login-buttons-forgot-password">{{i18n '_forgotPasswordForm.reset'}}</button>
 		{{> _loginButtonsBackToLoginLink}}
 	</div>
 </template>
 
 <template name="_loginButtonsBackToLoginLink">
-		<button id="back-to-login-link" class="btn btn-default col-sm-12">{{i18n '_loginButtonsBackToLoginLink.back'}}</button>
+		<button id="back-to-login-link" class="btn btn-default btn-flat col-sm-12">{{i18n '_loginButtonsBackToLoginLink.back'}}</button>
 </template>
 
 <template name="_loginButtonsFormField">
@@ -130,6 +130,6 @@
 	{{#each fields}}
 		{{> _loginButtonsFormField}}
 	{{/each}}
-	<button class="btn btn-primary" id="login-buttons-do-change-password">{{i18n '_loginButtonsChangePassword.submit'}}</button>
-	<button class="btn btn-default" id="login-buttons-cancel-change-password">{{i18n '_loginButtonsChangePassword.cancel'}}</button>
+	<button class="btn btn-primary btn-flat" id="login-buttons-do-change-password">{{i18n '_loginButtonsChangePassword.submit'}}</button>
+	<button class="btn btn-default btn-flat" id="login-buttons-cancel-change-password">{{i18n '_loginButtonsChangePassword.cancel'}}</button>
 </template>
