@@ -1,7 +1,7 @@
 Package.describe({
 	name: 'npvn:accounts-ui-bootstrap-3',
-	summary: 'Bootstrap-styled accounts-ui with multi-language support.',
-	version: '1.1.12',
+	summary: 'accounts-ui re-styled to play well with Material Design.',
+	version: '1.1.13',
 	git: "https://github.com/npvn/meteor-accounts-ui-bootstrap-3"
 });
 

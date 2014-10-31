@@ -2,31 +2,35 @@
 	.dropdown-menu
 		min-width:	300px;
 		padding: 15px;
+		box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .23)
+		border-radius: 2px
+	  
 		.or
 			margin: 5px 0;
 			text-align: center;
+		  
+		.btn
+			margin-top: 5px;
 
-#login-dropdown-list
-	#forgot-password-link
-	#login-other-options
-		text-align: center;
+		input
+			margin:0 0 -1px;
+			border-radius: 0px !important;
+	
+		input:last-of-type
+			margin-bottom: 20px;
+		  
+		#login-other-options
+			text-align: center
+		  
+		.alert-danger
+			background: none
+			color: #F44336
+		  
+		.alert-success
+			background: none
+			color: #0F9D58
 
-	.btn
-		margin-top: 5px;
-
-	input
-		margin:0 0 -1px;
-		border-radius: 0px;
-
-	input:first-of-type
-		border-top-left-radius: 2px;
-		border-top-right-radius: 2px;
-
-	input:last-of-type
-		margin-bottom: 5px;
-		border-bottom-left-radius: 2px;
-		border-bottom-right-radius: 2px;
-
+		  
 .modal-backdrop
 	opacity: 0.75;
 
@@ -69,19 +73,4 @@
 .btn-Twitter{
 	color: white;
 	background-color: #4099FF;
-}
-  
-.dropdown-menu {
-    box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .23) !important;
-    border-radius: 2px !important;
-}
-
-.alert-danger {
-    background: none !important;
-    color: #F44336 !important;
-}
-
-.alert-success {
-    background: none !important;
-    color: #0F9D58 !important;
 }
